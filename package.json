@@ -1,0 +1,18 @@
+{
+  "name": "datamodel",
+  "version": "1.0.0",
+  "description": "该模块集成了sequelize的封装，在开发项目中 更加 方便的使用数据模型 ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "datamodel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.41.0"
+  }
+}
