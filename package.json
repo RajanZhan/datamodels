@@ -1,7 +1,7 @@
 {
-  "name": "datamodel",
-  "version": "1.0.0",
-  "description": "该模块集成了sequelize的封装，在开发项目中 更加 方便的使用数据模型 ",
+  "name": "rajan-datamodel",
+  "version": "1.0.1",
+  "description": "该模块集成了sequelize的封装，在开发项目中 更加 方便的使用数据模型，添加了索引的支持 ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

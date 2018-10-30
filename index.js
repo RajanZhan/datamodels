@@ -72,6 +72,7 @@ module.exports = async (opt)=>{
                 underscored: true, // true,不使用驼峰命名
                 freezeTableName: true, // 不加s，不修改表名
                 tableName: model.tableName,
+                indexes:model.indexes,// 索引
             });
         }
         await instance.sync({

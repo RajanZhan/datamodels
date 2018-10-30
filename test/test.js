@@ -23,16 +23,16 @@ async function modelTest(db)
 		mainTableId:1
 	})
 	*/
-	let res = await db.models.user.findOne({
-		include:{
-			as:"userInfo",
-			model:db.models.userInfoAdd
-		},
-		where:{
-			wuid:1,
-		}
-	})
-	console.log("查询的结果",res.userInfo.realName);
+	// let res = await db.models.user.findOne({
+	// 	include:{
+	// 		as:"userInfo",
+	// 		model:db.models.userInfoAdd
+	// 	},
+	// 	where:{
+	// 		wuid:1,
+	// 	}
+	// })
+	// console.log("查询的结果",res.userInfo.realName);
 	//return db;
 }
 
