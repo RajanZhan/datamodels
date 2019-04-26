@@ -1,18 +1,19 @@
 {
-  "name": "rajan-datamodel",
-  "version": "1.0.1",
-  "description": "该模块集成了sequelize的封装，在开发项目中 更加 方便的使用数据模型，添加了索引的支持 ",
+  "name": "rajan_zhan-datamodel",
+  "version": "1.0.10",
+  "description": "新增了对sqlite的支持",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "datamodel"
+    "rajan_zhan datamodel"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mysql2": "^1.6.1",
-    "sequelize": "^4.41.0"
+    "sequelize": "^4.41.0",
+    "sqlite3": "^4.0.6"
   }
 }

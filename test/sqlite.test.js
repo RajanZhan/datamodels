@@ -2,29 +2,10 @@ var models = [];
 models.push(require("./models/user.data"));
 models.push(require("./models/userInfoAdd.data"));
 
-// function relationship(db){
-
-// 	// 外键在目标模型
-// 	 db.models.user.hasOne(db.models.userInfoAdd, {
-//         as: "userInfo",
-//        foreignKey: "mainTableId", //wuid mainTableId
-//        targetKey: "wuid"
-//     })
-// 	return db;
-// }
 
 async function modelTest(db)
 {
-	//console.log("model test ",db);
-	/*letdb.models.user.create({
-		nickname:"rajan",
-	})
-	
-	db.models.userInfoAdd.create({
-		realName:"占",
-		mainTableId:1
-	})
-	*/
+
 	let res = await db.models.user.findOne({
 		include:{
 			as:"userInfo",
@@ -47,6 +28,8 @@ async function start (){
 			"uname":"root",
 			"pwd":"11111111",
 		    "port":"3306",
+			type:"sqlite",
+			storage:"./db.sqlite",
 			logging:true,
 			updateFiled:true,
 		},

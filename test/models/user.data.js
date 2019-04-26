@@ -6,6 +6,8 @@ module.exports = {
         wuid: {
             type: Sequelize.INTEGER,
             primaryKey: true,
+            comment:"id的备注",
+            alias:"uuid",//字段的别名映射
             autoIncrement: true
         },
         nickname: Sequelize.STRING(128), //
@@ -17,7 +19,18 @@ module.exports = {
         roleId: Sequelize.INTEGER,
         remark:Sequelize.TEXT,// 备注
         tagid_list: Sequelize.STRING(512),
+        test2: Sequelize.STRING(512),
     },
+
+    // 模型间的关联关系
+    relation:[{
+        type:"hasOne",
+        as:"userInfo",
+        model:"userInfoAdd",
+        targetKey:"wuid",
+        foreignKey:"mainTableId",
+    }],
+
     // 创建索引
     indexes: [{
         unique:true,
