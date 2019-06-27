@@ -63,6 +63,7 @@ module.exports = async (opt) => {
             freezeTableName: false,
             logging: dbconfig.logging ? dbconfig.logging : false,
             //underscored:false,
+			timezone: dbconfig.timezone?dbconfig.timezone:'+08:00',//东八时区
             pool: {
                 max: 5,
                 min: 0,

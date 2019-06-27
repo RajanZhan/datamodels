@@ -1,7 +1,7 @@
 {
   "name": "rajan_zhan-datamodel",
-  "version": "1.0.10",
-  "description": "新增了对sqlite的支持",
+  "version": "1.0.11",
+  "description": "新增了对sqlite的支持,新增对时区的支持",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "mysql2": "^1.6.1",
-    "sequelize": "^4.41.0",
-    "sqlite3": "^4.0.6"
+    "sequelize": "^4.41.0"
   }
 }
